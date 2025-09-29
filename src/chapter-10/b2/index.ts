@@ -46,7 +46,7 @@ const printCourseInfo = (course: TCourse) => {
   console.log(`Course name: ${course.title}`);
   console.log(`Number of members: ${course.students.length}`);
   if (course.students.length === 0) {
-    console.log(`No member!`);
+    console.log(`No member`);
   } else {
     course.students.forEach((item: TStudent, index: number) => {
       console.log(`Member ${index + 1}: ${item.name}`);
