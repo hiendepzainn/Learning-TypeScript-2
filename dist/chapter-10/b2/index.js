@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const student1 = {
     id: 1,
     name: "Dinh Xuan Hien",
@@ -37,3 +35,4 @@ const printCourseInfo = (course) => {
 };
 registerStudentToCourse(student2, course1);
 printCourseInfo(course1);
+export {};

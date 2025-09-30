@@ -1,0 +1,34 @@
+{
+  "blogs": [
+    {
+      "ID": 1,
+      "Title": "Lập trình JavaScript cơ bản",
+      "Author": "Nguyễn Văn A",
+      "Content": "JavaScript là một ngôn ngữ lập trình phổ biến dùng để phát triển các ứng dụng web. Nó cho phép bạn tương tác với trang web, xử lý dữ liệu đầu vào từ người dùng và nhiều hơn thế nữa. Trong bài viết này, chúng ta sẽ tìm hiểu về các khái niệm cơ bản như biến, hàm, và điều kiện."
+    },
+    {
+      "ID": 2,
+      "Title": "Hướng dẫn React cho người mới bắt đầu",
+      "Author": "Trần Thị B",
+      "Content": "React là một thư viện JavaScript mạnh mẽ giúp xây dựng giao diện người dùng linh hoạt và hiệu quả. Nó cho phép bạn chia nhỏ giao diện thành các component có thể tái sử dụng. Bài viết này sẽ giúp bạn hiểu cách sử dụng JSX, state và props để bắt đầu với React."
+    },
+    {
+      "ID": 3,
+      "Title": "10 mẹo cải thiện kỹ năng lập trình",
+      "Author": "Lê Văn C",
+      "Content": "Việc nâng cao kỹ năng lập trình không chỉ dựa vào việc học ngôn ngữ mới mà còn phụ thuộc vào thói quen viết code hàng ngày. Bạn nên luyện tập giải thuật, đọc tài liệu chính thức, viết blog kỹ thuật, và tham gia vào các dự án mã nguồn mở để nâng cao trình độ."
+    },
+    {
+      "ID": 4,
+      "Title": "Node.js và Express: Xây dựng API cơ bản",
+      "Author": "Phạm Thị D",
+      "Content": "Node.js cho phép bạn xây dựng các ứng dụng phía server sử dụng JavaScript. Express là một framework phổ biến trên Node.js để tạo các API RESTful một cách nhanh chóng. Trong bài viết này, bạn sẽ học cách tạo một server đơn giản với Express và xử lý các yêu cầu HTTP."
+    },
+    {
+      "ID": 5,
+      "Title": "Tối ưu hóa hiệu suất website",
+      "Author": "Đỗ Văn E",
+      "Content": "Hiệu suất website ảnh hưởng trực tiếp đến trải nghiệm người dùng và SEO. Có nhiều kỹ thuật để tối ưu hóa như giảm kích thước hình ảnh, sử dụng bộ nhớ cache, nén file, lazy loading, và sử dụng CDN. Bài viết này sẽ hướng dẫn chi tiết từng kỹ thuật và cách áp dụng."
+    }
+  ]
+}
