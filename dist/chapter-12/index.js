@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class User {
     constructor(name, email, role) {
         this.getInfo = () => {
@@ -52,3 +50,4 @@ listUser.forEach((user) => {
     user.getInfo();
     user.printUserInfo();
 });
+export {};

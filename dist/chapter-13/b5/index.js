@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const printItem = (item) => {
     console.log(item);
 };
@@ -8,3 +6,4 @@ console.log("-----------------------------------------");
 const a = {
     contact: 123,
 };
+export {};

@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const firstElement = (arr) => {
     return arr[0];
 };
@@ -37,3 +35,4 @@ class Magicbox {
 }
 const newBox = new Magicbox(true);
 console.log(newBox);
+export {};

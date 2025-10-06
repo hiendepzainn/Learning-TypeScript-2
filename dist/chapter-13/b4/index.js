@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class Animal {
     constructor() {
         this.move = () => {
@@ -32,3 +30,4 @@ const getProperty = (item, key) => {
     return item[key];
 };
 console.log(getProperty({ name: `hien`, age: 22 }, `age`));
+export {};

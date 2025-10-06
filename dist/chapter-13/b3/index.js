@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const logLength = (value) => {
     console.log(value.length);
 };
@@ -13,3 +11,4 @@ logItem({
     name: "hiencuti",
     gender: "male",
 });
+export {};
