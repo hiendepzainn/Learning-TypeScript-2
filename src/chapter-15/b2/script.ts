@@ -49,6 +49,7 @@ saveButton.addEventListener("click", () => {
   reloadPage();
 });
 
+//Display data
 const todoListJSON: string | null = localStorage.getItem("data");
 if (todoListJSON) {
   const todoListJS: ITodo[] = JSON.parse(todoListJSON) as ITodo[];
@@ -58,8 +59,29 @@ if (todoListJSON) {
           <th scope="row">${index + 1}</th>
           <td>${item.id}</td>
           <td>${item.todo}</td>
-          <td><button class="btn btn-danger">Delete</button></td>
+          <td><button class="btn btn-danger" row-id="${
+            item.id
+          }">Delete</button></td>
         </tr>
     `;
   });
 }
+
+const deleteTodo = (id: number) => {
+  const todoListJS: ITodo[] = JSON.parse(todoListJSON!) as ITodo[];
+  const newList: ITodo[] = todoListJS.filter((item) => item.id !== id);
+
+  localStorage.setItem("data", JSON.stringify(newList));
+
+  reloadPage();
+};
+
+//Event delete
+const deleteList = document.querySelectorAll("td button");
+deleteList.forEach((item) => {
+  item.addEventListener("click", () => {
+    const idDelete: number = Number(item.getAttribute("row-id"));
+
+    deleteTodo(idDelete);
+  });
+});
