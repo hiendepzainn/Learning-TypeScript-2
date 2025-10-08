@@ -73,7 +73,6 @@
     <table class="table">
       <thead>
         <tr>
-          <th scope="col">No</th>
           <th scope="col">ID</th>
           <th scope="col">Name</th>
           <th scope="col">Action</th>
@@ -81,6 +80,68 @@
       </thead>
       <tbody id="bodyTable"></tbody>
     </table>
+
+    <button
+      style="display: none"
+      type="button"
+      class="btn btn-primary"
+      id="liveToastBtn"
+    >
+      Show live toast
+    </button>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="liveToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <strong class="me-auto">Notification</strong>
+          <small>just now</small>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">Delete successful!</div>
+      </div>
+    </div>
+
+    <button
+      style="display: none"
+      type="button"
+      class="btn btn-primary"
+      id="liveToastBtn2"
+    >
+      Show live toast
+    </button>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="liveToast2"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <strong class="me-auto">Notification</strong>
+          <small>just now</small>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">Add successful!</div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
