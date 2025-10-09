@@ -15,7 +15,69 @@
     <div class="container">
       <div class="d-flex justify-content-between align-items-center mb-3">
         <h3>List blogs</h3>
-        <button class="btn btn-primary">Create a blog</button>
+        <!-- Modal CREATE -->
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+        >
+          Create a blog
+        </button>
+
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                  Create a new blog
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <label class="form-label">ID</label>
+                <input class="form-control mb-2" />
+
+                <label class="form-label">Title</label>
+                <input class="form-control mb-2" />
+
+                <label class="form-label">Description</label>
+                <input class="form-control" />
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cancel
+                </button>
+                <button
+                  id="saveButton"
+                  type="button"
+                  class="btn btn-warning"
+                  data-bs-dismiss="modal"
+                >
+                  Save
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal CREATE -->
       </div>
       <table class="table">
         <thead>
@@ -28,6 +90,124 @@
         </thead>
         <tbody></tbody>
       </table>
+
+      <!-- TOAST Create  -->
+      <button
+        style="display: none"
+        class="btn btn-primary"
+        id="liveToastBtn-create"
+      >
+        Show live toast
+      </button>
+      <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div
+          id="liveToast-create"
+          class="toast text-bg-success"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+        >
+          <div class="toast-body">Create success!</div>
+        </div>
+      </div>
+      <!-- TOAST Create  -->
+
+      <!-- TOAST Delete  -->
+      <button
+        style="display: none"
+        class="btn btn-primary"
+        id="liveToastBtn-delete"
+      >
+        Show live toast
+      </button>
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div
+          id="liveToast-delete"
+          class="toast text-bg-success"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+        >
+          <div class="toast-body">Delete success!</div>
+        </div>
+      </div>
+      <!-- TOAST Delete  -->
+
+      <!-- TOAST Update  -->
+      <button
+        style="display: none"
+        class="btn btn-primary"
+        id="liveToastBtn-update"
+      >
+        Show live toast
+      </button>
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div
+          id="liveToast-update"
+          class="toast text-bg-success"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+        >
+          <div class="toast-body">Update success!</div>
+        </div>
+      </div>
+      <!-- TOAST Update  -->
+
+      <!-- Modal EDIT -->
+      <div
+        class="modal fade"
+        id="staticBackdrop2"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Edit infor
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <label class="form-label">ID</label>
+              <input disabled class="form-control mb-2" />
+
+              <label class="form-label">Title</label>
+              <input class="form-control mb-2" />
+
+              <label class="form-label">Description</label>
+              <input class="form-control" />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button
+                id="updateButton"
+                type="button"
+                class="btn btn-warning"
+                data-bs-dismiss="modal"
+              >
+                Update
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal EDIT -->
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
