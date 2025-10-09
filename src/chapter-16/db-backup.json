@@ -1,0 +1,58 @@
+{
+  "blogs": [
+    {
+      "id": "4221",
+      "title": "Công nghệ hôm nay",
+      "description": "Những xu hướng công nghệ mới nhất"
+    },
+    {
+      "id": "5232",
+      "title": "Du lịch 4 phương",
+      "description": "Khám phá những vùng đất mới"
+    },
+    {
+      "id": "5343",
+      "title": "Nhà đất thời đại nay",
+      "description": "Khám phá bí quyết đầu tư ổn định"
+    },
+    {
+      "id": "4311",
+      "title": "Dạy con đúng cách",
+      "description": "Con không nghe lời thì nên chiều theo hay nghiêm khắc?"
+    },
+    {
+      "id": "5345",
+      "title": "Kiếp nạn thời bao cấp",
+      "description": "Làm gì để sống sót qua nạn đói?"
+    },
+    {
+      "id": "4318",
+      "title": "Dinh dưỡng mỗi ngày",
+      "description": "Dầu thưc vật hay mỡ lợn?"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "blogId": 1,
+      "title": "AI thay đổi thế giới ra sao?"
+    },
+    {
+      "id": "2",
+      "blogId": 2,
+      "title": "Top 5 địa điểm du lịch năm 2025"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Nguyễn Văn A",
+      "email": "a.nguyen@example.com"
+    },
+    {
+      "id": "2",
+      "name": "Trần Thị B",
+      "email": "b.tran@example.com"
+    }
+  ]
+}
